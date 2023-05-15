@@ -1,0 +1,17 @@
+@model Product
+
+<h1>Delete Product</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input class="form-control" asp-for="Price" readonly />
+    </div>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
